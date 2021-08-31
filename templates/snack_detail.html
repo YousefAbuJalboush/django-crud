@@ -1,0 +1,15 @@
+{%extends 'base.html' %}
+
+{% block content %}
+<div class="px-44">
+    <h2 class="text-4xl text-purple-800 p-5">{{ snack.title}}</h2>
+    <ul class="p-8 list-disc text-2xl">
+        <li class="p-1 text-black-800">Title : {{ snack.title}}</li>
+        <li class="p-1 text-black-800">Purchaser  : {{ snack.purshaser}}</li>
+        <li class="p-1 text-black-800">Description : {{ snack.description}}</li>
+        <a class="p-3 pt-3" href="{%url 'update_snack' snack.pk %}"><button class=" bg-blue-600"> Update </button></a>
+        <a class="p-3 pt-3" href="{%url 'delete_snack' snack.pk %}"><button class="bg-red-600"> Delete </button></a>
+    </ul>
+</div>
+
+{% endblock content %}

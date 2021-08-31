@@ -1,0 +1,14 @@
+{%extends 'base.html' %}
+
+{% block content %}
+<div class="px-44">
+    <h2 class="text-4xl text-purple-800 p-5">Snacks List :</h2>
+    <!-- <br> -->
+    <ul class="p-8 list-decimal text-2xl">
+        {% for snack in object_list %}
+        <li class="p-1 text-blue-800"><a href="{% url 'snack_detail' snack.pk %}">{{ snack.title }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock content %}

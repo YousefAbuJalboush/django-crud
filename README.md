@@ -15,4 +15,4 @@ python manage.pyrunserver
 
 | Table Of Content                               | Links                                        |
 | ---------------------------------------------- | -------------------------------------------  |
-| PR '1' > Django CRUD and Forms                 | [Django CRUD and Forms]()|
+| PR '1' > Django CRUD and Forms                 | [Django CRUD and Forms](https://github.com/YousefAbuJalboush/django-crud/pull/1)|
