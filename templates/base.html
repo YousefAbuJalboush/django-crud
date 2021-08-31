@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Snacks List</title>
+</head>
+
+<body class="m-0 bg-gray-300">
+    <header class="bg-gray-600 text-3xl text-purple-400">
+        <nav>
+            <ul class="list-outside list-none overflow-hidden p-3">
+                <li class="float-left pr-10 pl-5"><h1>DJANGO CRUD</h1></li>
+                <li class="float-left"><a class="block px-4 hover:bg-gray-700" href="{% url 'snack_list' %}">Snack List</a></li>
+                <li class="float-left"><a class="block px-4 hover:bg-gray-700" href="{% url 'create_snack' %}">Create Snack</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        {% block content %}
+
+        {% endblock content %}
+    </main>
+    <footer class="bg-gray-600 fixed w-full text-center left-0 bottom-0 text-3xl text-purple-400">
+        <p class="p-3">&copy; Yousef Abu-Jalboush</p>
+    </footer>
+
+</body>
+
+</html>

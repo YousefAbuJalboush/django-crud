@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{%block content %}
+<div class="px-44">
+    <h1 class="text-4xl text-purple-800 p-5">Delete Snacks</h1>
+    <form method="POST" action="" class="p-8 text-2xl">
+        {%csrf_token %}
+        {{ form.as_p }}
+        <h3>Confirm deletion: Do you really want to delete "{{ snack.title }}"?!</h3>
+        <input type='submit' value='Delete' class="bg-red-600 mt-10">
+    </form>
+</div>
+
+
+{% endblock content %}
